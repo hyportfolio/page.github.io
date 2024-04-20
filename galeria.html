@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="galeria.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="text-gray-400 bg-gray-900 body-font">
+    <a name="home"></a>
+    <div
+      class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+    >
+      <!-- <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" > <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24" > <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" ></path> </svg> </a> -->
+      <!-- Logo snippet starts here -->
+      <br />
+      <img id="logo" src="images/logo.png" /> <br />
+      <!-- Navbar starts here -->
+      <nav
+        id="navbar"
+        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+      >
+        <a class="mr-5 hover:text-white" href="index.html">inicio</a>
+        <a class="mr-5 hover:text-white" href="galeria.html">portafolio</a>
+        
+        <a class="mr-5 hover:text-white" href="#contact">contacto</a>
+      </nav>
+      <!-- Linkedin Redirect Button-->
+      <a
+        href="https://www.linkedin.com/in/heidy-yurany-prada-alvarez-6803a3231/"
+        target="_blank"
+        ><button
+          id="button"
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+        >
+          Linkedin
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg></button
+      ></a>
+    </div>
+  </header>
+
+  <div class="gallery">
+    <div class="image-wrapper">
+      <img src="images/Tarjetas Serenite_Mesa de trabajo 1.jpg" alt="Descripción de la imagen 1">
+    </div>
+    <div class="image-wrapper">
+      <img src="images/Banner Publicitario-01.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+    <div class="image-wrapper">
+      <img src="images/Tarjetas de propiedad.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+
+    <div class="image-wrapper">
+      <img src="images/Tarjetas construciones tem.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+    <div class="image-wrapper">
+      <img src="images/Tarjetas imantadas.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+    <div class="image-wrapper">
+      <img src="images/Tarjetas Word lam.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+    <div class="image-wrapper">
+      <img src="images/Volantes-01.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+
+    <div class="image-wrapper">
+      <img src="images/Animacion Personalizada_Mesa de trabajo 1.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+    <div class="image-wrapper">
+      <img src="images/Menú carta-01.jpg" alt="Descripción de la imagen 2">
+    </div>
+
+
+    
+    <!-- Agrega más imágenes según sea necesario -->
+  </div>
+<!-- Agrega un modal al final del cuerpo del documento -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="caption"></div>
+</div>
+
+<script>// Selecciona todas las imágenes de la galería
+const images = document.querySelectorAll('.gallery img');
+
+// Selecciona el modal y el elemento para cerrar el modal
+const modal = document.getElementById("myModal");
+const closeModal = modal.querySelector(".close");
+
+// Recorre cada imagen y agrega un event listener para abrir el modal
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    modal.style.display = "block";
+    const modalImg = modal.querySelector("#modalImage");
+    modalImg.src = image.src;
+    const captionText = modal.querySelector("#caption");
+    captionText.innerHTML = image.alt;
+  });
+});
+
+// Agrega un event listener para cerrar el modal al hacer clic en el botón de cerrar
+closeModal.addEventListener('click', () => {
+  modal.style.display = "none";
+});
+
+// Cierra el modal al hacer clic fuera de él
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}); </script>
+
+
+</body>
+
+</html>
