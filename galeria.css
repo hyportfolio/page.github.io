@@ -4,6 +4,9 @@
 } */
 
 /* Loading Animation */
+@font-face { font-family: Raleway ExtraLight; 
+  src: url('./font/Raleway-ExtraLight.ttf'); } 
+
 .content {
   display: flex;
   justify-content: center;
@@ -56,11 +59,11 @@
 /* ---------------- */
 
 #logo {
-width: 100%;
-height: auto;
-max-width: 100px;
-
-}
+  width: 100%;
+  height: auto;
+  max-width: 190px;
+  
+  } 
 
 /* Waving Hand*/
 
@@ -86,6 +89,7 @@ max-width: 100px;
 
 /* Navbar */
 #navbar {
+  font-family: 'Raleway ExtraLight'; 
   font-size: 20px;
   color: rgb(255, 255, 255);
 
@@ -128,7 +132,7 @@ color: rgb(255, 255, 255);
 background-color: rgb(26,32,44);
 padding:auto;
 /* font-size: calc(100% + 1.5vw); */
-font-family: "Myriad Pro", sans-serif;
+font-family: 'Tenor Sans', sans-serif;
 letter-spacing: 1px;
 word-spacing: 2px;
 font-style: italic;
@@ -233,3 +237,6 @@ font-size: 0.5em;
   color: #6b0b0b;
   font-size: 24px;
 }
+
+@font-face { font-family: roboto-regular; 
+  src: url('../font/Raleway-ExtraLight.ttf'); } 

@@ -4,6 +4,10 @@
 } */
 
 /* Loading Animation */
+
+@font-face { font-family: Raleway ExtraLight; 
+  src: url('./font/Raleway-ExtraLight.ttf'); } 
+
   .content {
     display: flex;
     justify-content: center;
@@ -58,7 +62,7 @@
 #logo {
 width: 100%;
 height: auto;
-max-width: 100px;
+max-width: 190px;
 
 }
 
@@ -86,6 +90,7 @@ max-width: 100px;
 
 /* Navbar */
 #navbar {
+    font-family: 'Raleway ExtraLight'; 
     font-size: 20px;
     color: rgb(255, 255, 255);
   
@@ -98,19 +103,22 @@ color: rgb(255, 255, 255);
 /* About me section */
 #aboutme0 {
     font-size: 35px;
+    font-family: 'Raleway ExtraLight';
+    
 }
 
 #aboutme1 {
     font-size: 20px;
+    font-family: 'Raleway ExtraLight'; 
     color: white;
 }
 
 /* Dislplay Image */
 #aboutimage {
     background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 1px;
-    box-shadow: 0 0 10px rgba(76, 75, 75, 0.492);
+    border-radius: 60px;
+    padding: 4px;
+    box-shadow: 0 0 5px rgba(76, 75, 75, 0.492);
 
 }
 
@@ -128,7 +136,7 @@ color: rgb(255, 255, 255);
   background-color: rgb(26,32,44);
   padding:auto;
   /* font-size: calc(100% + 1.5vw); */
-  font-family: "Myriad Pro", sans-serif;
+  font-family: 'Tenor Sans', sans-serif;                                               
   letter-spacing: 1px;
   word-spacing: 2px;
   font-style: italic;
@@ -168,3 +176,5 @@ color: rgb(255, 255, 255);
 }
 
 
+@font-face { font-family: roboto-regular; 
+  src: url('../font/Raleway-ExtraLight.ttf'); } 
