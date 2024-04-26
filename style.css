@@ -5,9 +5,9 @@
 
 /* Loading Animation */
 
-@font-face { font-family: Raleway ExtraLight; 
+/*@font-face { font-family: Raleway ExtraLight; 
   src: url('./font/Raleway-ExtraLight.ttf'); } 
-
+*/
   .content {
     display: flex;
     justify-content: center;
