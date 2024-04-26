@@ -133,7 +133,7 @@ color: rgb(255, 255, 255);
 
 /* Quote */
 .quote{
-  background-color: rgb(26,32,44);
+  background-color: rgba(36, 47, 68, 0);
   padding:auto;
   /* font-size: calc(100% + 1.5vw); */
   font-family: 'Tenor Sans', sans-serif;                                               
